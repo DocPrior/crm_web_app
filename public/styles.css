@@ -1,0 +1,32 @@
+body {
+  margin: 0px;
+  font-family: Arial, Helvetica;
+  line-height: 1.5;
+}
+
+h1 {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+nav a {
+  background-color: lightgrey;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main p {
+  background-color: salmon;
+  padding: 5px;
+}
+
+span {
+  text-decoration: underline cyan;
+  font-weight: bold;
+}

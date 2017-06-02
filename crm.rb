@@ -2,6 +2,7 @@ require_relative 'contact'
 require 'sinatra'
 
 get ('/') do
+  @contacts = Contact.all
   erb(:index)
 end
 
@@ -14,7 +15,6 @@ get ('/about') do
   erb(:about)
 end
 
-@contacts_count = Contact.count
 
 after do
   ActiveRecord::Base.connection.close
