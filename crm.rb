@@ -14,6 +14,8 @@ get ('/about') do
   erb(:about)
 end
 
+@contacts_count = Contact.count
+
 after do
   ActiveRecord::Base.connection.close
 end
