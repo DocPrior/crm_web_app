@@ -1,7 +1,18 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: inherit;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+}
+
+
 body {
   margin: 0px;
-  font-family: Arial, Helvetica;
-  line-height: 1.5;
 }
 
 h1 {
@@ -15,7 +26,7 @@ nav a {
   background-color: lightgrey;
   color: white;
   text-align: center;
-  padding: 5px;
+  padding: 2.5px;
   display: block;
   text-decoration: none;
   font-weight: bold;
@@ -29,4 +40,35 @@ main p {
 span {
   text-decoration: underline cyan;
   font-weight: bold;
+}
+
+ul {
+  list-style: none;
+}
+
+main li {
+  background-color: cyan;
+  font-weight: bold;
+  float: left;
+  width: 100%;
+clear: both;
+
+}
+
+li a {
+  font-size: 0.5em;
+  float: left;
+}
+
+li a:first-of-type {
+  border-right: 0.1em solid black;
+}
+
+footer {
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-size: 0.5em;
+  float: left;
+  width: 100%
 }
