@@ -65,7 +65,8 @@ li {
 }
 
 li a {
-  font-size: 0.5em;
+  font-size: 0.75em;
+  padding-left: 2px;
 }
 
 li a:first-of-type {
