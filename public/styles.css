@@ -25,6 +25,7 @@ h1 {
   color: white;
   text-align: center;
   padding: 10px;
+  margin-bottom: 0px;
 }
 
 nav a {
@@ -57,9 +58,9 @@ ul {
 
 li {
   background-color: cyan;
-  font-weight: bold;
+  font-weight: bolder;
   margin-right: 20px;
-  padding: 10px;
+  padding: 10px 10px 5px 5px;
   margin-bottom: 10px;
 }
 
