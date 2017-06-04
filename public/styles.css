@@ -3,6 +3,12 @@
   box-sizing: border-box;
 }
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 html {
   box-sizing: inherit;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -10,9 +16,8 @@ html {
   line-height: 1.5;
 }
 
-
 body {
-  margin: 0px;
+  margin: 10px;
 }
 
 h1 {
@@ -30,11 +35,15 @@ nav a {
   display: block;
   text-decoration: none;
   font-weight: bold;
+  margin-bottom: 2px;
 }
 
 main p {
   background-color: salmon;
   padding: 5px;
+  margin-left: 40px;
+  margin-right: 20px;
+  margin-bottom: 2px;
 }
 
 span {
@@ -46,22 +55,21 @@ ul {
   list-style: none;
 }
 
-main li {
+li {
   background-color: cyan;
   font-weight: bold;
-  float: left;
-  width: 100%;
-clear: both;
-
+  margin-right: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 li a {
   font-size: 0.5em;
-  float: left;
 }
 
 li a:first-of-type {
   border-right: 0.1em solid black;
+  padding-right: 0.5em;
 }
 
 footer {
