@@ -82,3 +82,10 @@ footer {
   float: left;
   width: 100%
 }
+
+.contact {
+  background-color: cyan;
+  font-weight: bold;
+  padding-left: 5px;
+  margin-bottom: 15px;
+}

@@ -1,9 +1,10 @@
-<h1>Contacts</h1>
-<ol>
+<h1>All Contacts</h1>
+<ul>
   <% @contacts.each do |contact| %>
-    <li> First Name: <%= contact.first_name %> Last Name: <%=contact.last_name %> Email: <%= contact.email %> Note: <%= contact.note %></li>
-  <%end%>
-</ol>
-
-<a href="http://localhost:4567">Homepage</a>
-<a href="http://localhost:4567/about">About</a>
+      <li> <%= contact.first_name %>
+        <%=contact.last_name %>
+        Email: <%= contact.email %>
+        Note: <%= contact.note %>
+        <a href="/contacts/<%= contact.id %>"> ID: <%= contact.id %></a>  </li>
+    <%end%>
+</ul>
