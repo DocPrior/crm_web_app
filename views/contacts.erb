@@ -1,10 +1,10 @@
-<h1>All Contacts</h1>
+<h1 class="all_contacts">All Contacts</h1>
 <ul>
   <% @contacts.each do |contact| %>
       <li> <%= contact.first_name %>
         <%=contact.last_name %>
-        Email: <%= contact.email %>
-        Note: <%= contact.note %>
-        <a href="/contacts/<%= contact.id %>"> ID: <%= contact.id %></a>  </li>
+        <div>Email: <%= contact.email %></div>
+        <div>Note: <%= contact.note %></div>
+        <div><a class="id_link" href="/contacts/<%= contact.id %>"> ID: <%= contact.id %></a></div>  </li>
     <%end%>
 </ul>

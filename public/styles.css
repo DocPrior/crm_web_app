@@ -20,6 +20,20 @@ body {
   margin: 10px;
 }
 
+.contact {
+  background-color: cyan;
+  font-weight: bold;
+  padding-left: 5px;
+  margin-bottom: 15px;
+}
+
+
+.all_contacts {
+  background-color: salmon;
+  color: black;
+  padding: 0;
+}
+
 h1 {
   background-color: black;
   color: white;
@@ -69,7 +83,7 @@ li a {
   padding-left: 2px;
 }
 
-li a:first-of-type {
+li a:nth-child(2) {
   border-right: 0.1em solid black;
   padding-right: 0.5em;
 }
@@ -81,11 +95,4 @@ footer {
   font-size: 0.5em;
   float: left;
   width: 100%
-}
-
-.contact {
-  background-color: cyan;
-  font-weight: bold;
-  padding-left: 5px;
-  margin-bottom: 15px;
 }
