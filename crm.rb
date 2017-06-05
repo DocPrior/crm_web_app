@@ -20,8 +20,12 @@ get ('/contacts/new') do
 end
 
 get ('/contacts/:id') do
-  @contact = Contact.find(params[:id].to_i)
+  @contact = Contact.where(:id => params[:id]).first
+  if @contact
     erb(:show_contact)
+  else
+    raise Sinatra::NotFound
+  end
 end
 
 post ('/contacts') do
@@ -32,6 +36,15 @@ post ('/contacts') do
     note: params[:note]
   )
   redirect to('/contacts')
+end
+
+get ('/contacts/:id/edit') do
+  @contact = Contact.where(:id => params[:id]).first
+  if @contact
+    erb(:edit_contact)
+  else
+    raise Sinatra::NotFound
+  end
 end
 
 after do
