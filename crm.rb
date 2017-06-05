@@ -63,6 +63,16 @@ put ('/contacts/:id') do
   end
 end
 
+delete ('/contacts/:id') do
+  @contact = Contact.where(:id => params[:id]).first
+  if @contact
+    @contact.delete
+    redirect to('/contacts')
+  else
+    raise Sinatra::NotFound
+  end
+end
+
 after do
   ActiveRecord::Base.connection.close
 end
