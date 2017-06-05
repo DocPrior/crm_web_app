@@ -1,10 +1,14 @@
 <p>There are <span> <%= @contacts.length %></span> contacts.</p>
 <ul>
   <% @contacts.each do |contact| %>
-        <li> <div> <%= contact.first_name %>  <%=contact.last_name %> (<%= contact.email %>) </div>
-          <a href="/contacts/<%= contact.id %>/edit">Edit</a>
-          <a href="/contacts/<%= contact.id %>">Delete</a>
-          ID: <%= contact.id %>
-        </li>
-      <%end%>
+    <li>
+      <div> <%= contact.first_name %>  <%=contact.last_name %> (<%= contact.email %>) </div>
+      <a href="/contacts/<%= contact.id %>/edit">Edit</a>
+      <a href="/contacts/<%= contact.id %>">Delete</a>
+      ID: <%= contact.id %>
+      <form  action="/contacts/<%= contact.id %>" method="get">
+        <input type="submit" value="Contact Info">
+      </form>
+    </li>
+  <%end%>
 </ul>
