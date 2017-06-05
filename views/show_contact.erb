@@ -5,13 +5,13 @@
 
 <form action="/contacts/<%= @contact.id %>" method="post">
   <input type="hidden" name="_method" value="delete">
-  <input type="submit" value="Delete Contact">
+  <input class="button" type="submit" value="Delete Contact">
 </form>
 
 <form  action="/contacts/<%= @contact.id %>/edit" method="get">
-  <input type="submit" value="Edit Contact">
+  <input class="button" type="submit" value="Edit Contact">
 </form>
 
 <form action="/" method="get">
-  <input type="submit" value="Go Back">
+  <input class="button" type="submit" value="Go Back">
 </form>

@@ -18,31 +18,61 @@ html {
 
 body {
   margin: 10px;
+  background-color: rgb(81, 181, 239)
 }
 
+
 .contact {
-  background-color: cyan;
+  background-color: rgb(20, 229, 51);
   font-weight: bold;
   padding-left: 5px;
   margin-bottom: 15px;
+  border-radius: 2%;
 }
 
 .all_contacts {
-  background-color: salmon;
+  background-color: rgba(158, 75, 12, 0.9);
   color: black;
   padding: 0;
+  border-radius: 2%;
+}
+
+.contact_info {
+  text-align: left;
+}
+
+.new {
+  background-color: rgba(158, 75, 12, 0.9);
+  color: black;
+  border-radius: 2%;
+}
+
+.button {
+  background-color: rgba(158, 75, 12, 0.9);
+  border-radius: 5%;
+  border-color: rgba(158, 75, 12, 0.9);
+}
+
+.button:hover {
+  color: white;
+}
+
+.button:active {
+  background-color: white;
+  color: rgba(158, 75, 12, 0.9);
 }
 
 h1 {
-  background-color: black;
+  background-color: rgb(138, 142, 134);
   color: white;
   text-align: center;
   padding: 10px;
   margin-bottom: 0px;
+  border-radius: 2%;
 }
 
 nav a {
-  background-color: lightgrey;
+  background-color: rgb(153, 255, 71);
   color: white;
   text-align: center;
   padding: 2.5px;
@@ -50,18 +80,30 @@ nav a {
   text-decoration: none;
   font-weight: bold;
   margin-bottom: 2px;
+  border-radius: 2%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  background-color: rgba(158, 75, 12, 0.9);
+  color: white;
 }
 
 main p {
-  background-color: salmon;
+  background-color: rgba(158, 75, 12, 0.9);
   padding: 5px;
   margin-left: 40px;
   margin-right: 20px;
   margin-bottom: 2px;
+  border-radius: 2%;
 }
 
 span {
-  text-decoration: underline cyan;
+  text-decoration: underline rgb(20, 229, 51);
   font-weight: bold;
 }
 
@@ -70,11 +112,12 @@ ul {
 }
 
 li {
-  background-color: cyan;
+  background-color: rgb(20, 229, 51);
   font-weight: bolder;
   margin-right: 20px;
   padding: 10px 10px 5px 5px;
   margin-bottom: 10px;
+  border-radius: 2%;
 }
 
 li a {
@@ -94,4 +137,9 @@ footer {
   font-size: 0.5em;
   float: left;
   width: 100%
+}
+
+form {
+  text-align: center;
+
 }

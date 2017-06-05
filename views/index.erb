@@ -6,8 +6,8 @@
       <a href="/contacts/<%= contact.id %>/edit">Edit</a>
       <a href="/contacts/<%= contact.id %>">Delete</a>
       ID: <%= contact.id %>
-      <form  action="/contacts/<%= contact.id %>" method="get">
-        <input type="submit" value="Contact Info">
+      <form  class="contact_info" action="/contacts/<%= contact.id %>" method="get">
+        <input class="button" type="submit" value="Contact Info">
       </form>
     </li>
   <%end%>
