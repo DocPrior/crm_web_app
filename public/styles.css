@@ -18,12 +18,12 @@ html {
 
 body {
   margin: 10px;
-  background-color: rgb(81, 181, 239)
+  background-color: rgb(241, 241, 241)
 }
 
 
 .contact {
-  background-color: rgb(20, 229, 51);
+  background-color: rgb(233, 199, 5);
   font-weight: bold;
   padding-left: 5px;
   margin-bottom: 15px;
@@ -31,7 +31,7 @@ body {
 }
 
 .all_contacts {
-  background-color: rgba(158, 75, 12, 0.9);
+  background-color: rgba(245, 48, 49, 0.9);
   color: black;
   padding: 0;
   border-radius: 2%;
@@ -42,15 +42,15 @@ body {
 }
 
 .new {
-  background-color: rgba(158, 75, 12, 0.9);
+  background-color: rgba(245, 48, 49, 0.9);
   color: black;
   border-radius: 2%;
 }
 
 .button {
-  background-color: rgba(158, 75, 12, 0.9);
+  background-color: rgba(245, 48, 49, 0.9);
   border-radius: 5%;
-  border-color: rgba(158, 75, 12, 0.9);
+  border-color: rgba(245, 48, 49, 0.9);
 }
 
 .button:hover {
@@ -59,11 +59,11 @@ body {
 
 .button:active {
   background-color: white;
-  color: rgba(158, 75, 12, 0.9);
+  color: rgba(245, 10, 30, 0.9);
 }
 
 h1 {
-  background-color: rgb(138, 142, 134);
+  background-color: rgb(245, 38, 64);
   color: white;
   text-align: center;
   padding: 10px;
@@ -72,7 +72,7 @@ h1 {
 }
 
 nav a {
-  background-color: rgb(153, 255, 71);
+  background-color: rgb(234, 245, 45);
   color: white;
   text-align: center;
   padding: 2.5px;
@@ -89,12 +89,12 @@ a {
 }
 
 a:hover {
-  background-color: rgba(158, 75, 12, 0.9);
+  background-color: rgba(245, 48, 49, 0.9);
   color: white;
 }
 
 main p {
-  background-color: rgba(158, 75, 12, 0.9);
+  background-color: rgba(245, 48, 49, 0.9);
   padding: 5px;
   margin-left: 40px;
   margin-right: 20px;
@@ -103,7 +103,7 @@ main p {
 }
 
 span {
-  text-decoration: underline rgb(20, 229, 51);
+  text-decoration: underline rgb(255, 215, 47);
   font-weight: bold;
 }
 
@@ -112,7 +112,7 @@ ul {
 }
 
 li {
-  background-color: rgb(20, 229, 51);
+  background-color: rgb(255, 215, 47);
   font-weight: bolder;
   margin-right: 20px;
   padding: 10px 10px 5px 5px;
@@ -131,7 +131,7 @@ li a:nth-child(2) {
 }
 
 footer {
-  background-color: black;
+  background-color: rgb(145, 145, 145);
   text-align: center;
   color: white;
   font-size: 0.5em;
